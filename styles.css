@@ -1,4 +1,4 @@
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -276,7 +276,14 @@
                 top: 20px;
                 right: 20px;
                 font-size: 13px;
+                gap: 0; /* Remove gap to hide space for text */
             }
+            
+            /* Hide the text span on mobile */
+            .password-btn span {
+                display: none;
+            }
+            
             .popup-content {
                 padding: 30px 20px;           
                 display: block;
@@ -286,6 +293,16 @@
             .subscribe-btn{
                 width: 60%;
             }
+            .lock-icon {
+            width: 25px;
+            height: 25px;
+            fill: currentColor;
+            margin-top: 50px;
+        }
+        .main-container{
+            margin-top: -30px;
+        }
+
         }
 
         @media (max-width: 480px) {
